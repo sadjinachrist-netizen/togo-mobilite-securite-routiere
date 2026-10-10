@@ -1,0 +1,20 @@
+# Maintient l'application Streamlit Cloud éveillée pendant la période d'évaluation
+# (12 au 16 octobre 2026). À désactiver ensuite : onglet Actions > Keep dashboard awake > Disable workflow.
+name: Keep dashboard awake
+
+on:
+  schedule:
+    - cron: "23 */4 * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping the dashboard
+        run: |
+          # Streamlit Cloud répond 303 puis pose un cookie de session : suivre les redirections avec un cookie jar.
+          code=$(curl -sL -c /tmp/ck -b /tmp/ck -o /dev/null -w "%{http_code}" --max-time 180 \
+            https://togo-mobilite-securite-routiere.streamlit.app/)
+          echo "HTTP $code"
+          case "$code" in 2*|3*) echo "Dashboard joignable." ;; *) echo "Injoignable"; exit 1 ;; esac

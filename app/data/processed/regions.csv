@@ -1,0 +1,7 @@
+region,population,km_routes,km_revetues,auto_ecoles,auto_ecoles_agreees,prefectures,sans_auto_ecole,auto_ecoles_non_agreees,part_revetue,m_route_par_hab,hab_par_auto_ecole,part_agreees,part_population,part_km,part_auto_ecoles
+Centrale,795529,460.20000000000005,338.3,12,4,5,1,8,73.5,0.58,66294.0,33.3,9.8,13.6,4.4
+Grand Lomé,2188376,163.10000000000002,152.60000000000002,213,103,2,0,110,93.6,0.07,10274.0,48.4,27.0,4.8,78.3
+Kara,985512,734.6999999999999,476.3,14,7,7,4,7,64.8,0.75,70394.0,50.0,12.2,21.8,5.1
+Maritime,1346615,474.3,305.7,11,5,6,1,6,64.5,0.35,122420.0,45.5,16.6,14.1,4.0
+Plateaux,1635946,1010.6,664.1,12,9,12,5,3,65.7,0.62,136329.0,75.0,20.2,30.0,4.4
+Savanes,1143520,530.2,249.2,10,4,7,4,6,47.0,0.46,114352.0,40.0,14.1,15.7,3.7

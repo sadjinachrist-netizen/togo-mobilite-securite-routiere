@@ -1,0 +1,5 @@
+indicateur,etat,km,etat_lib
+ROUTES REVETUES,BON,754.16,Bon état
+ROUTES REVETUES,MAUVAIS,562.74,Mauvais état
+ROUTES REVETUES,MOYEN,431.84,État moyen
+ROUTES REVETUES,TRAVAUX,449.74,Travaux en cours
